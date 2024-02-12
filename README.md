@@ -8,14 +8,49 @@
 npm install @react-native-helper/netinfo
 ```
 
+## Required dependencies
+```sh
+npm i @react-native-community/netinfo @react-native-ui-design/button @react-native-ui-design/dialog react-native-paper react-native-responsive-helper react-native-safe-area-context react-native-vector-icons
+```
+
 ## Usage
 
+
+Wrap your root component in `PaperProvider` from `react-native-paper`. This will usually be in the `index.js` file. If you have an Expo project, you can do this inside the exported component in the `App.js` file.
+
+Example:
 ```js
-import { multiply } from '@react-native-helper/netinfo';
+import * as React from 'react';
+import { AppRegistry } from 'react-native';
+import { PaperProvider } from 'react-native-paper';
+import { name as appName } from './app.json';
+import App from './src/App';
+
+export default function Main() {
+  return (
+    <PaperProvider>
+      <App />
+    </PaperProvider>
+  );
+}
+
+AppRegistry.registerComponent(appName, () => Main);
+```
+
+Import NetInfoHelper and use
+
+Example:
+
+```js
+import NetInfoHelper from '@react-native-helper/netinfo';
 
 // ...
 
-const result = await multiply(3, 7);
+return (
+    ...
+    <NetInfoHelper />
+    ...
+)
 ```
 
 ## Contributing
@@ -24,8 +59,27 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 ## License
 
-MIT
+The MIT License.
+
+## Author
+
+<table>
+  <tr>
+    <td >
+      <img src="https://avatars.githubusercontent.com/u/41302126?v=4" width="64" height="64" alt="Abiraman K">
+    </td>
+    <td>
+      <a href="https://github.com/AbiramanK" target="_blank">Abiraman K</a>
+    </td>
+  </tr>
+</table>
+
+## Thank you
+
+### Sponsors
+
+Thank you to all our sponsors! [Become a sponsor](https://opencollective.com/react-native-helper#sponsor) and get your image on our README on GitHub.
+
+<a href="https://opencollective.com/react-native-helper#sponsors" target="_blank"><img src="https://opencollective.com/react-native-helper/sponsors.svg?width=890" alt="@react-native-ui-design/dialog"></a>
 
 ---
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
