@@ -9,16 +9,17 @@ npm install @react-native-helper/netinfo
 ```
 
 ## Required dependencies
+
 ```sh
-npm i @react-native-community/netinfo @react-native-ui-design/button @react-native-ui-design/dialog react-native-paper react-native-responsive-helper react-native-safe-area-context react-native-vector-icons
+npm i @react-native-community/netinfo @rnpack/utils react-native-design react-native-vector-icons
 ```
 
 ## Usage
 
-
 Wrap your root component in `PaperProvider` from `react-native-paper`. This will usually be in the `index.js` file. If you have an Expo project, you can do this inside the exported component in the `App.js` file.
 
 Example:
+
 ```js
 import * as React from 'react';
 import { AppRegistry } from 'react-native';
@@ -44,7 +45,7 @@ Example:
 ```js
 import NetInfoHelper from '@react-native-helper/netinfo';
 
-// ...
+...
 
 return (
     ...
