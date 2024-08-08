@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
-import { Button, colors, Text } from 'react-native-design';
-import { NetInfoHelper } from '@react-native-helper/netinfo';
 import { responsive } from '@rnpack/utils';
+import { Button, colors, Text, DesignProvider } from 'react-native-design';
+import { NetInfoHelper } from '@react-native-helper/netinfo';
 
 export default function App() {
   function onPressHello() {
@@ -10,7 +10,7 @@ export default function App() {
   }
 
   return (
-    <Fragment>
+    <DesignProvider>
       <View style={styles?.container}>
         <View style={styles?.header}>
           <Text variant="title">@react-native-helper/netinfo</Text>
@@ -33,7 +33,7 @@ export default function App() {
         </View>
       </View>
       <NetInfoHelper hideClose />
-    </Fragment>
+    </DesignProvider>
   );
 }
 
