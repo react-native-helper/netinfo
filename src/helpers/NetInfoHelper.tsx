@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Dialog, Text, MaterialCommunityIcons } from 'react-native-design';
 

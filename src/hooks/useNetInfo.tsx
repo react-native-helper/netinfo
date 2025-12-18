@@ -12,7 +12,7 @@ interface UseNetInfoReturns {
 }
 
 function useNetInfo(): UseNetInfoReturns {
-  const unsubscribeNetInfoListener = useRef<NetInfoSubscription>();
+  const unsubscribeNetInfoListener = useRef<NetInfoSubscription>(null);
 
   const [isNetworkDisabled, setIsNetworkDisabled] = useState<boolean>(false);
 
@@ -55,7 +55,7 @@ function useNetInfo(): UseNetInfoReturns {
     }
 
     if (Platform.OS === 'android') {
-      Linking.sendIntent('android.settings.NETWORK_OPERATOR_SETTINGS');
+      Linking.sendIntent('android.settings.DATA_USAGE_SETTINGS');
     }
   }
 

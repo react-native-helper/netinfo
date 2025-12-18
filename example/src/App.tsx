@@ -1,7 +1,8 @@
-import React from 'react';
-import { Alert, StyleSheet, View } from 'react-native';
+import { Alert, View, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { responsive } from '@rnpack/utils';
 import { Button, colors, Text, DesignProvider } from 'react-native-design';
+
 import { NetInfoHelper } from '@react-native-helper/netinfo';
 
 export default function App() {
@@ -10,34 +11,39 @@ export default function App() {
   }
 
   return (
-    <DesignProvider>
-      <View style={styles?.container}>
-        <View style={styles?.header}>
-          <Text variant="title">@react-native-helper/netinfo</Text>
-        </View>
-        <View style={styles?.content}>
-          <View style={styles?.instruction}>
-            <Text variant="label" style={styles?.instructionTitle}>
-              Usage:
-            </Text>
-            <View style={styles?.description}>
-              <Text>1. Turn off you internet</Text>
-              <Text>2. Then it will show an alert windows</Text>
-              <Text>
-                3. In that alert window there is an option to enable mobile data
-                and wifi
-              </Text>
-            </View>
+    <SafeAreaView style={styles.rootContainer}>
+      <DesignProvider>
+        <View style={styles?.container}>
+          <View style={styles?.header}>
+            <Text variant="title">@react-native-helper/netinfo</Text>
           </View>
-          <Button title="Hello!" onPress={onPressHello} />
+          <View style={styles?.content}>
+            <View style={styles?.instruction}>
+              <Text variant="label" style={styles?.instructionTitle}>
+                Usage:
+              </Text>
+              <View style={styles?.description}>
+                <Text>1. Turn off you internet</Text>
+                <Text>2. Then it will show an alert windows</Text>
+                <Text>
+                  3. In that alert window there is an option to enable mobile
+                  data and wifi
+                </Text>
+              </View>
+            </View>
+            <Button title="Hello!" onPress={onPressHello} />
+          </View>
         </View>
-      </View>
-      <NetInfoHelper hideClose />
-    </DesignProvider>
+        <NetInfoHelper hideClose />
+      </DesignProvider>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  rootContainer: {
+    flex: 1,
+  },
   container: {
     flex: 1,
   },

@@ -4,8 +4,11 @@
 
 ## Installation
 
+
 ```sh
-npm install @react-native-helper/netinfo
+npm install @react-native-helper/netinfo react-native-nitro-modules
+
+> `react-native-nitro-modules` is required as this library relies on [Nitro Modules](https://nitro.margelo.com/).
 ```
 
 ## Required dependencies
@@ -70,7 +73,7 @@ The MIT License.
       <img src="https://avatars.githubusercontent.com/u/41302126?v=4" width="64" height="64" alt="Abiraman K">
     </td>
     <td>
-      <a href="https://github.com/AbiramanK" target="_blank">Abiraman K</a>
+      <a href="https://abiramank.github.io/" target="_blank">Abiraman K</a>
     </td>
   </tr>
 </table>
@@ -84,3 +87,6 @@ Thank you to all our sponsors! [Become a sponsor](https://opencollective.com/rea
 <a href="https://opencollective.com/react-native-helper#sponsors" target="_blank"><img src="https://opencollective.com/react-native-helper/sponsors.svg?width=890" alt="@react-native-ui-design/dialog"></a>
 
 ---
+
+
+
