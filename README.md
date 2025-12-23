@@ -11,35 +11,14 @@ npm install @react-native-helper/netinfo react-native-nitro-modules
 > `react-native-nitro-modules` is required as this library relies on [Nitro Modules](https://nitro.margelo.com/).
 ```
 
+
 ## Required dependencies
 
 ```sh
-npm i @react-native-community/netinfo @rnpack/utils react-native-design react-native-vector-icons
+npm i @react-native-community/netinfo react-native-design @react-native-async-storage/async-storage moti react-native-autocomplete-dropdown react-native-gesture-handler react-native-svg react-native-vector-icons react-native-reanimated react-native-worklets @rnpack/utils buffer
 ```
 
 ## Usage
-
-Wrap your root component in `PaperProvider` from `react-native-paper`. This will usually be in the `index.js` file. If you have an Expo project, you can do this inside the exported component in the `App.js` file.
-
-Example:
-
-```js
-import * as React from 'react';
-import { AppRegistry } from 'react-native';
-import { PaperProvider } from 'react-native-paper';
-import { name as appName } from './app.json';
-import App from './src/App';
-
-export default function Main() {
-  return (
-    <PaperProvider>
-      <App />
-    </PaperProvider>
-  );
-}
-
-AppRegistry.registerComponent(appName, () => Main);
-```
 
 Import NetInfoHelper and use
 
@@ -59,7 +38,10 @@ return (
 
 ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+- [Development workflow](CONTRIBUTING.md#development-workflow)
+- [Sending a pull request](CONTRIBUTING.md#sending-a-pull-request)
+- [Code of conduct](CODE_OF_CONDUCT.md)
+
 
 ## License
 
@@ -87,6 +69,3 @@ Thank you to all our sponsors! [Become a sponsor](https://opencollective.com/rea
 <a href="https://opencollective.com/react-native-helper#sponsors" target="_blank"><img src="https://opencollective.com/react-native-helper/sponsors.svg?width=890" alt="@react-native-ui-design/dialog"></a>
 
 ---
-
-
-

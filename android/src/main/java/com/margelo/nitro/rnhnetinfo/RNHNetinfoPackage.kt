@@ -1,11 +1,11 @@
-package com.margelo.nitro.reactnativehelper.netinfo
+package com.margelo.nitro.rnhnetinfo
 
 import com.facebook.react.BaseReactPackage
 import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.model.ReactModuleInfoProvider
 
-class RNHNetInfoPackage : BaseReactPackage() {
+class RNHNetinfoPackage : BaseReactPackage() {
     override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
         return null
     }
@@ -16,7 +16,7 @@ class RNHNetInfoPackage : BaseReactPackage() {
 
     companion object {
         init {
-            System.loadLibrary("RNHNetInfo")
+            System.loadLibrary("rnhnetinfo")
         }
     }
 }

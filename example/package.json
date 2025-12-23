@@ -12,14 +12,16 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native-community/netinfo": "^11.4.1",
-    "@rnpack/utils": "^0.1.12",
+    "@rnpack/utils": "^0.1.14",
+    "buffer": "^6.0.3",
     "moti": "^0.30.0",
     "react": "19.2.0",
     "react-native": "0.83.0",
     "react-native-autocomplete-dropdown": "^5.0.0",
-    "react-native-design": "^0.1.15",
+    "react-native-design": "^0.1.16",
+    "react-native-gesture-handler": "^2.30.0",
     "react-native-nitro-modules": "^0.31.10",
-    "react-native-reanimated": "^4.2.0",
+    "react-native-reanimated": "^4.2.1",
     "react-native-safe-area-context": "^5.6.2",
     "react-native-svg": "^15.15.1",
     "react-native-vector-icons": "^10.3.0",
@@ -36,7 +38,7 @@
     "@react-native/metro-config": "0.83.0",
     "@react-native/typescript-config": "0.83.0",
     "@types/react": "^19.2.0",
-    "react-native-builder-bob": "^0.40.13",
+    "react-native-builder-bob": "^0.40.17",
     "react-native-monorepo-config": "^0.3.1"
   },
   "engines": {

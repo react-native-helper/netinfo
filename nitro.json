@@ -1,21 +1,20 @@
 {
   "cxxNamespace": [
-    "RNHNetInfo"
+    "rnhnetinfo"
   ],
   "ios": {
-    "iosModuleName": "RNHNetInfo"
+    "iosModuleName": "RNHNetinfo"
   },
   "android": {
     "androidNamespace": [
-      "reactnativehelper",
-      "netinfo"
+      "rnhnetinfo"
     ],
-    "androidCxxLibName": "RNHNetInfo"
+    "androidCxxLibName": "rnhnetinfo"
   },
   "autolinking": {
-    "RNHNetInfo": {
-      "swift": "RNHNetInfo",
-      "kotlin": "RNHNetInfo"
+    "RNHNetinfo": {
+      "swift": "RNHNetinfo",
+      "kotlin": "RNHNetinfo"
     }
   },
   "ignorePaths": [
